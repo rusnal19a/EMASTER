@@ -1,0 +1,320 @@
+// Create the main div element
+const fixedDiv = document.createElement('div');
+fixedDiv.id = 'fixedku';
+fixedDiv.style.height = '100px';
+fixedDiv.style.width = '100px';
+fixedDiv.style.background = 'red';
+fixedDiv.style.position = 'fixed';
+fixedDiv.style.bottom = '10px';
+fixedDiv.style.right = '0px';
+fixedDiv.style.zIndex = '999';
+
+// Create the input element
+const inputElement = document.createElement('input');
+inputElement.type = 'text';
+inputElement.value = 'teks';
+inputElement.className = 'inpku';
+
+// Create the inner div for the link
+const urlDiv = document.createElement('div');
+urlDiv.className = 'urlku';
+
+// Create the anchor element
+const anchorElement = document.createElement('a');
+anchorElement.href = '';
+anchorElement.textContent = 'dsfd';
+
+// Append the anchor to the urlDiv
+urlDiv.appendChild(anchorElement);
+
+// Append the input and urlDiv to the fixedDiv
+fixedDiv.appendChild(inputElement);
+fixedDiv.appendChild(urlDiv);
+
+// Append the fixedDiv to the body
+document.body.appendChild(fixedDiv);
+
+
+
+//part2-----------------------
+
+var dataku=[
+    {
+        "nama": "HERMAN SUSANTO",
+        "id": "bd2cf52db44503bcedd5d65b5357e46d"
+    },
+    {
+        "nama": "BUDIANTO",
+        "id": "d0386037a373bd4f6f15226bb3e551da"
+    },
+    {
+        "nama": "HERIK MAI ARIFIN",
+        "id": "52916238da0dd440aaddf25ab748d1d1"
+    },
+    {
+        "nama": "EKO PURWANTO",
+        "id": "1a9d70d384266baa143cd3549f97f62c"
+    },
+    {
+        "nama": "SRI ANDAYANI",
+        "id": "94154ad6842ec049fc1e4eca8d6debb3"
+    },
+    {
+        "nama": "SRI SULISTIYANI",
+        "id": "380137f927839c225378e998f6e960fd"
+    },
+    {
+        "nama": "NURROHMAT",
+        "id": "373fd7cad2f43ea04c1d0562560a01f2"
+    },
+    {
+        "nama": "NUR MU'ID",
+        "id": "e1f71cffba3f46086f76a9359c2cd2e7"
+    },
+    {
+        "nama": "BAHUDIN",
+        "id": "9b530257e31e3397a08c871964bc0ef7"
+    },
+    {
+        "nama": "DJONO PRASETYO MULYADI",
+        "id": "af83621a4870b243f9e340ad1add5cf5"
+    },
+    {
+        "nama": "MOHAMMAD JAMJURI",
+        "id": "12207457930c76b3349b182c5e19bd9b"
+    },
+    {
+        "nama": "MOH. THOLIB",
+        "id": "2127166110a42ea9fbfdd631b6da9ad1"
+    },
+    {
+        "nama": "SUYONO",
+        "id": "b5e08fbbea80d0296a47b8a8f30e04eb"
+    },
+    {
+        "nama": "MASKUR RAHMAN",
+        "id": "de3c26557b58acbde32f80265af300fc"
+    },
+    {
+        "nama": "NISWAKHUL ULIYAH",
+        "id": "82e7c5e9539c707362902eb2183bbec3"
+    },
+    {
+        "nama": "DWI PENAS PRIYANTO",
+        "id": "0a0ea3af5955ea21ef67b0f943254984"
+    },
+    {
+        "nama": "MUHAMMAD THOWIL MAKHIS",
+        "id": "031b6be84f194dd90e638911211cd23a"
+    },
+    {
+        "nama": "FIFIT WULANDARI",
+        "id": "9c3c0f68749afe7c7062ee64f6057b7e"
+    },
+    {
+        "nama": "YUSWITA SARI",
+        "id": "33a06a0bf578bcc3cb27a6029584d2c3"
+    },
+    {
+        "nama": "ISNIN MURTADLO",
+        "id": "576cb7509c10cea20cc4b303ec91b557"
+    },
+    {
+        "nama": "NUR RAHMAWATI",
+        "id": "cff73a09a2726de8176096831bc1cc80"
+    },
+    {
+        "nama": "ABDUL ROHIM AL HAFIDZ",
+        "id": "25678cb9458a21187067c1216d208db2"
+    },
+    {
+        "nama": "DWI IMARATUL SOLECHA",
+        "id": "9e949bf326249b3465646a9db029734c"
+    },
+    {
+        "nama": "DESI NYONO KRISTANTI",
+        "id": "23fbe164f4bd2ff27626ecd9836159ca"
+    },
+    {
+        "nama": "NANIK MUSYAROFAH",
+        "id": "8866b9f0e550bc23942f5637031f8841"
+    },
+    {
+        "nama": "ROSALIA PURWANTI",
+        "id": "89a37bd7d942980e930d8804795b924a"
+    },
+    {
+        "nama": "AHMAD JUNAIDI MACHFUD",
+        "id": "9793acd581940379d8907712547887ff"
+    },
+    {
+        "nama": "SAMSU RIDWAN",
+        "id": "5e918d27d0210b6938c7cde7c4471b40"
+    },
+    {
+        "nama": "KRIS HIDAYAH",
+        "id": "6567d7f2d6537873f6a70ddac9bc53e1"
+    },
+    {
+        "nama": "AL FARID",
+        "id": "40554997d95116cbfb33db0773998f25"
+    },
+    {
+        "nama": "RENY IKA HIDAYATI",
+        "id": "cc49fa320dc17a0a17eafe4393b90104"
+    },
+    {
+        "nama": "TENY KURNIASARI",
+        "id": "8e4f6fe976029c7ad6843d9c9d7b6ab2"
+    },
+    {
+        "nama": "ARIS YULI WICAKSONO",
+        "id": "ff4465dc70b9c0bede89856d4d9f8878"
+    },
+    {
+        "nama": "IVA UMU AZIZAH",
+        "id": "b947f665b195feabc7a58db47dc6f154"
+    },
+    {
+        "nama": "JONI DARMAWAN",
+        "id": "435af96489e0132300140c6ce8b2c678"
+    },
+    {
+        "nama": "NIKMATUR ROSIDAH",
+        "id": "73e48459075caf947d370138dafd1e00"
+    },
+    {
+        "nama": "MANSUR SUBKHI",
+        "id": "7530365a622ac10e97e6aee63c9c9901"
+    },
+    {
+        "nama": "SITI AISYAH KAMAWATININGSIH",
+        "id": "8e7abdec826f7dc2876b771b1219ca74"
+    },
+    {
+        "nama": "IGAS AMALIA ROSANA",
+        "id": "47a2be80f1654d26b9ae725a804da861"
+    },
+    {
+        "nama": "HERI CANDRA",
+        "id": "6e8e302be6f73c5287fc1d7c732d9c3a"
+    },
+    {
+        "nama": "AGUS IMAM WAHYUDI",
+        "id": "e4507926b1f48b610fb15317b030ec4e"
+    },
+    {
+        "nama": "MUKHTAR FITRIAWAN BILAWAL",
+        "id": "697a17a7bbf3a6e8d99d6ec8755c2c92"
+    },
+    {
+        "nama": "IFAK NURISANTI",
+        "id": "d9580eb4a1d14dcc027c28b2bb997018"
+    },
+    {
+        "nama": "AKVIAN ERIE PRAWIRA",
+        "id": "b9bd068d8429c47ef582e2cf5a59e389"
+    },
+    {
+        "nama": "DYAH AYU CHANDRA DEWI",
+        "id": "f3b8b5deb0130b91fcd8e85eda351350"
+    },
+    {
+        "nama": "ARIF DIO ESA PRAYITNO",
+        "id": "df5a711fcee9918f8ccc91c47a8ed706"
+    },
+    {
+        "nama": "QUROTUL AINI",
+        "id": "f91ca26447b9fd07374b1368d249e93c"
+    },
+    {
+        "nama": "GALIH SATRIA PERMADI",
+        "id": "e629191dec11bb451fd2be839c5ea42d"
+    },
+    {
+        "nama": "KHOIROTIN NISAK",
+        "id": "1e086ea79207c4e8c6bd26ade389c70c"
+    },
+    {
+        "nama": "MUHAMMAD HUMAIDI",
+        "id": "403e2d576bdfeca3b1c1347ac9173339"
+    },
+    {
+        "nama": "MOHASWIN RIZKI ILHAM",
+        "id": "1f520840cf3a005d55ead07d3a76870b"
+    },
+    {
+        "nama": "NURMALA RAHMAWATI",
+        "id": "e2e74df65b8e09301930e2d86f6fbc32"
+    },
+    {
+        "nama": "INDAH PURWANTI",
+        "id": "2bb9ef58eca30b851c201948793516ad"
+    },
+    {
+        "nama": "KHAMIM TOHARI",
+        "id": "d6a488072e98409e32c75be4b61541f5"
+    },
+    {
+        "nama": "YUNI SUTANTI",
+        "id": "edd54795c20a6e1fca1af6ee54fe7634"
+    },
+    {
+        "nama": "LUISA ULFAH VIRERA",
+        "id": "b00ea68c3f8c5e7d26a9ddcbcef3c38d"
+    },
+    {
+        "nama": "IRMA ERVIANA",
+        "id": "dee2a492b5d916b3f0da2fc6b896edfe"
+    },
+    {
+        "nama": "BELLA ANGGRAENI",
+        "id": "a70bb3bfe2b992761213095a6175ecba"
+    }
+];
+var urlku="https://master.bkd.jatimprov.go.id/media.php?module=jab_ptk&id_skpd=bb7d715110565782e212a11d2fcc5b92&id=b5e08fbbea80d0296a47b8a8f30e04eb";
+
+// Ambil elemen input berdasarkan ID
+const inputField = document.querySelector('.inpku');
+
+// Tambahkan event listener untuk menangkap input
+inputField.addEventListener('input', function() {
+// Tampilkan hasil ketikan di console
+hasil=dataku.filter(user => user.nama.toLowerCase().includes(inputField.value.toLowerCase()));
+if(hasil.length==1){
+var urlawal=window.location.href;
+  console.log(hasil[0].nama);
+// Mendapatkan elemen div dengan class "urlku"
+var divUrlku = document.querySelector('.urlku');
+divUrlku.textContent="";
+// Membuat elemen <a>
+	var link = document.createElement('a');
+
+	// Menetapkan atribut href dan teks untuk elemen <a>
+		//link.href = window.location.href;
+	const urlObj = new URL(urlawal);
+	urlObj.searchParams.set('id', hasil[0].id);
+	link.href = urlObj;
+
+
+		link.textContent = hasil[0].nama;
+
+		// Menambahkan elemen <a> ke dalam div
+			divUrlku.appendChild(link);
+  }
+  
+});
+
+var inputdlm = document.querySelector('.inpku');
+    
+ inputdlm.addEventListener('keydown', function(event) {
+        // Mengecek apakah tombol yang ditekan adalah Enter
+        if (event.key === 'Enter') {
+            // Mencegah perilaku default (jika diperlukan)
+            event.preventDefault();
+            // Mengklik link
+            var linkdlm = document.querySelector('.urlku a');
+          linkdlm.click();
+            
+        }
+ })
